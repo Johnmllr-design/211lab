@@ -26,4 +26,4 @@ def subi_instr(dest, op1, immediate):
 # Encode the sub instruction
 @assembler.instruction('sub #, #, #', 1)
 def subi_instr(dest, op1, operand2):
-  return pips.iformat(opcode='sub', r0=dest, r1=op1, r2=operand2)
+  return pips.rformat(opcode='sub', r0=dest, r1=op1, r2=operand2)
