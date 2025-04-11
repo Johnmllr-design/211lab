@@ -19,28 +19,28 @@ v2.0 raw
 0001            # Set Write_enable to 1 and everything else to 0 so 0x0001
 
 # Opcode 1: sub
-000D            # Set Write_enable, B_inverse and Carry_in to 1 and everything else to 0
+000D            # Set Write_enable, B_inverse and Carry_in to 1
 
 # Opcode 2: and
-0000
+0011            # Write_enable = 1, ALUOp = 001
 
 # Opcode 3: or
-0000
+0021            # Write_enable = 1, ALUOp = 010
 
 # Opcode 4: nand
-0000
+0027            # A_inv, B_inv, Write_enable = 1, ALUOp = 010 (or)
 
 # Opcode 5: nor
-0000
+0017            # A_inv, B_inv, Write_enable = 1, ALUOp = 001 (and)
 
 # Opcode 6: xor
-0000
+0031            # Write_enable = 1, ALUOp = 011
 
 # Opcode 7: slt
-0000
+0041            # Write_enable = 1, ALUOp = 100 (signed compare)
 
 # Opcode 8: sltu
-0000
+0051            # Write_enable = 1, ALUOp = 101 (unsigned compare)
 
 # Opcode 9: lb
 0000
